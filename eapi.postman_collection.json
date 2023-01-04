@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "31cbe7e1-a66e-4a13-b37e-c4ae006af57a",
+		"name": "eapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "All Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiZmRiZDQ2ZjlmYmMzNjk5ZmUwNzBhMWEzNGEwNDBlMmJiMTBhNWUxMDY2NGZmMWEzNTkyMzZkM2JiNDBlMjdkNTE2YjkzMmJhOTA5ZDhjMjAiLCJpYXQiOjE2NzI2OTMyNTMuMTk3MTk4LCJuYmYiOjE2NzI2OTMyNTMuMTk3MiwiZXhwIjoxNzA0MjI5MjUzLjE4MDc5MSwic3ViIjoiNTEiLCJzY29wZXMiOltdfQ.KaaeyB6gBPR6AsxCTobntE7vatZnaV7eSwld4LzMX3SCTUOcM4FRTNB7MPR3KqFHldywqaxrcZP2pEZoH1WvrEBgl_uSUTloOSoVrW3apgbi1cTkYB0tFsExMDoBdmbkhok4Q-dp2RFcS5nmQzf8z5e0f-Dp-bn2sTIerfZbrBMciiXCTBAcJsB2arJMfS-rr7wlAH-hD92y92OJENr-FeDOUEqChlYiWw3B8N1ijCBAfJbmeEEcT_L3GEZQtl4-Lzb42_J17XizlPEGf-HstsMlvKp8-w5M9a_ocFbz9zAkXo2Dq9lAizJU_GXz8VvxGLDurpPROKEypTJR-sb_JRsGIbmshRwNQXTN7h4WACxDkyOpLiSD3ZDjsbE-G68iujGXTgwLuD7sc-OWGqVSYaAguK1Zs2JzpZQxkdEpN_UqVm9CQY4yW_oVx37SGe1KEA4ma2Upkevfg9XHHuitCB9rCCLu5_P2wCU4WX85Ah0Q3Dy9aIJdvZiO-QosKC8eXnM_suQcofWdVr6rewQNJiXFeuKrmX-AdisyH_nN7Fq6jqqnis2Jo9t0bZLXb7erlPuYFfPAvgHXkW2lxQS9XXqYNxd2pmKfnaU4H2FVfOE-i9EQl05AiXLnxD0LoKdfFLRh9ly0tu5XXTQLsGdhAqz7ILkBHSLHtbZsdOZ0DoY",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"samsung\",\r\n    \"description\":\"samsung\",\r\n    \"price\":\"11000\",\r\n    \"stock\":\"6\",\r\n    \"discount\":\"80\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "accept",
+									"value": "json",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYmFlYzk0ZTNlYmRiMzVhODg5MDc2NmFjOTQzZGEzMWMxOTNhNjIzYTcxNzc5ODJhY2FmYzBlNzlmMDQxMDliN2IxYmQ0MWEyMThjYTAxMjAiLCJpYXQiOjE2NzI4NTM0NDIuNzIxNzksIm5iZiI6MTY3Mjg1MzQ0Mi43MjE3OTIsImV4cCI6MTcwNDM4OTQ0Mi43MDg4ODMsInN1YiI6IjU2Iiwic2NvcGVzIjpbXX0.eraG8hlwAO-RrWN9J4dm1CvtmZrPieU9M-1Mkme0KEQZDZ-Mfs9DDMXnSyXQyv6gvLb0Va2IbeJpzMfXSXDVY47hDwrKJlibtfUfV4coBXBEqNZko-qDRHWKD2cx7OVgy7EFw0cXStN3xwIyeafq1QhyZBo9ACtM-jpsXUzR4oAZAXfNxkFZhLdJxBWjNvWwXwQTGRec4G3voX1PFf0yc8Lnfy1bj7FR2_FeLqqB9LlSs5Dy0WkSq2T7YVlIqvoddBYHmnf2ImIdJvwEODc0m9Evf_El-iJjeaOUZZZCOcCRozdYZZFRtcke1Auq77ZHJJULjCOozRh4Hw8oSOz91vVp_eVq5sU9wedTEQsWqG3jY8eUUttY9uWWWId-3Eq05Lj7MOnGjhc_-lGXAU0noLkgn4RlDt81lsuB_ryMzHbA0_B1T3WyyUOKAnIusShcsVCg9Duwno5SG_Lo6fij8H2R0yK4gNe48wDrTLW4nq1HlN5GBgkWpbEgB2cHJmxsPHg33vENmX_DFsMUG8Xzowy0bu8PwtN2gwEh_lTU5mLyE_jvc4p50DfC34RrSNbOByQsmSleeO7035xnmxEtMImZnR4nH3hj763YkwC5a8xHX-zbFh9xXO37eGK8EEWX_1b_jLIqrnaESHQbdTolcuJ32EY-ZL3h8QIy-TFyTN8",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\"rest\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/55",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"55"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/57",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"57"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "Review Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/1/reviews",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"1",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product Review ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer\":\"TELDO\",\r\n    \"review\":\"Hello\",\r\n    \"star\":\"5\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/55/reviews",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"55",
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Review",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer\" : \"as\",\r\n    \"review\": \"as\",\r\n    \"star\": 1\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/56/reviews/306",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"56",
+								"reviews",
+								"306"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete  Review",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/56/reviews/305",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"56",
+								"reviews",
+								"305"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OAuth",
+			"item": [
+				{
+					"name": "Get Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"grant_type\":\"password\",\r\n    \"client_id\":\"2\",\r\n    \"client_secret\":\"nHlU6wDroHEfIHAtlTguS3u2IpmrBJu9TFZltQzw\",\r\n    \"username\":\"kayan@gmail.com\",\r\n    \"password\":\"123123123\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/oauth/token",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
